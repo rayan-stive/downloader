@@ -4,12 +4,12 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-# url = input('Entre un url : ')
+url = input('Entre un url : ')
 
-# video = YouTube(url)
-# stream = video.streams.get_highest_resolution()
+video = YouTube(url)
+stream = video.streams.get_highest_resolution()
 
-# stream.download()
+stream.download()
 
 
 @app.route("/")
